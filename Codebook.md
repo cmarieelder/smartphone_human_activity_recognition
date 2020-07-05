@@ -6,6 +6,7 @@
 
 ## Variables
 `training_test_data.csv`  
+```
 1   subject  
 2   activity  
 3   tBodyAcc-mean()-X  
@@ -74,8 +75,9 @@
 66   fBodyBodyGyroMag-std()  
 67   fBodyBodyGyroJerkMag-mean()  
 68   fBodyBodyGyroJerkMag-std()  
-
+```
 `training_test_avgs.csv`  
+```
 1   subject  
 2   activity  
 3   avg_tBodyAcc-mean()-X  
@@ -144,7 +146,7 @@
 66   avg_fBodyBodyGyroMag-std()  
 67   avg_fBodyBodyGyroJerkMag-mean()  
 68   avg_fBodyBodyGyroJerkMag-std()  
-
+```
 # Study Design
 ## Data Collection
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -205,6 +207,7 @@ fBodyGyroJerkMag
 
 ## Summaries
 `training_test_data.csv`  
+```
     subject        activity         tBodyAcc-mean()-X tBodyAcc-mean()-Y  
  Min.   : 1.00   Length:10299       Min.   :-1.0000   Min.   :-1.00000  
  1st Qu.: 9.00   Class :character   1st Qu.: 0.2626   1st Qu.:-0.02490  
@@ -338,8 +341,9 @@ fBodyGyroJerkMag
  Mean   :-0.7798             Mean   :-0.7922           
  3rd Qu.:-0.6122             3rd Qu.:-0.6437           
  Max.   : 1.0000             Max.   : 1.0000  
- 
+ ```
 `training_test_avgs.csv`  
+```
     subject       activity         avg_tBodyAcc-mean()-X avg_tBodyAcc-mean()-Y  
  Min.   : 1.0   Length:180         Min.   :0.2216        Min.   :-0.040514    
  1st Qu.: 8.0   Class :character   1st Qu.:0.2712        1st Qu.:-0.020022    
@@ -501,4 +505,4 @@ fBodyGyroJerkMag
  Mean   :-0.7564                 Mean   :-0.7715               
  3rd Qu.:-0.5831                 3rd Qu.:-0.6081               
  Max.   : 0.1466                 Max.   : 0.2878     
- 
+ ```
