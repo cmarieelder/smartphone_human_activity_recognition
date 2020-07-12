@@ -32,4 +32,6 @@ The goal is to create one R script called run_analysis.R that does the following
 4. Github contains a README called README.md that explains the analysis files, how all of the scripts work and how they are connected, is clear and understandable.
 
 ### References:
-* This project was created for [John Hopkins University: Getting and Cleaning Data](https://www.coursera.org/learn/data-cleaning) Course Project 4.
+* This project was created for the [John Hopkins University: Getting and Cleaning Data](https://www.coursera.org/learn/data-cleaning) course.
+  - Assignment specification can be found under "Course Project 4".
+
