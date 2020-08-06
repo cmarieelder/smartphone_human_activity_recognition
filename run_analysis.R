@@ -14,12 +14,11 @@ run_analysis <- function() {
   lapply(list_of_packages, library, character.only = TRUE)
 
   # Source functions -----------------------------------
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   source(file = "src/download_file.R")
 
   # Set hard-coded variables ---------------------------
   file_url <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  data_dir <- "data"
+  data_dir <- "."
   results_dir <- "results"
   dataset_dir <- paste0(data_dir, "/UCI\ HAR\ Dataset")
   dest_file <- paste0(dataset_dir, ".zip")
