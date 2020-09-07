@@ -49,7 +49,7 @@ run_analysis <- function() {
   names(feature_data) <- features[, 2]
   names(subject) <- "subject"
   names(activity) <- "activity"
-  
+
   # Extract only the mean and standard deviation for each measurement
   mean_std_data <- feature_data[,grepl("mean\\(|std\\(", names(feature_data))]
 
@@ -65,11 +65,13 @@ run_analysis <- function() {
   # for each activity and each subject
   training_test_avgs <- dplyr::group_by(training_test_data, subject, activity) %>%
     dplyr::summarize(across(.fns=mean, .names="avg_{col}"))
-  
+
   # Output all tidy data sets to files
   if (!file.exists(results_dir)) {dir.create(results_dir)}
-  write.csv(training_test_data, paste0(results_dir, "/training_test_data.csv"))
-  write.csv(training_test_avgs, paste0(results_dir, "/training_test_avgs.csv"))
+  write.table(training_test_data, paste0(results_dir, "/training_test_data.csv"),
+              row.name=FALSE)
+  write.table(training_test_avgs, paste0(results_dir, "/training_test_avgs.csv"),
+              row.name=FALSE)
 }
 
 run_analysis()
